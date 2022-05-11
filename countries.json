@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Avalon",
+    "mapTo": "England",
+    "continent": "Theah"
+  },
+  {
+    "name": "Castille",
+    "mapTo": "Spain",
+    "continent": "Theah"
+  },
+  {
+    "name": "Eisen",
+    "mapTo": "Germany",
+    "continent": "Theah"
+  },
+  {
+    "name": "Montaigne",
+    "mapTo": "France",
+    "continent": "Theah"
+  },
+  {
+    "name": "Ussura",
+    "mapTo": "Russia",
+    "continent": "Theah"
+  },
+  {
+    "name": "Vestenvenmajar",
+    "mapTo": "Sweden",
+    "continent": "Theah"
+  },
+  {
+    "name": "Vodacce",
+    "mapTo": "Italy",
+    "continent": "Theah"
+  }
+]

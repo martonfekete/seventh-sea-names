@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <script src="./js/constants.js"></script>
+    <script src="./js//init.js"></script>
+  </head>
+  <body>
+    <form>
+      <select id="countries" onchange="getNames(this)">
+        <option>Select country</option>
+      </select>
+    </form>
+    <section id="results">
+      <h1></h1>
+      <div></div>
+    </section>
+    <button id="btn_more" onclick="moreNames()" style="display: none">
+      More
+    </button>
+    <section id="saved" style="display: none">
+      <h1>Saved names</h1>
+      <div></div>
+      <button id="btn_clear" onclick="clearNames()">Clear names</button>
+    </section>
+    <script src="/js/save.js"></script>
+    <script src="/js/generator.js"></script>
+  </body>
+</html>
