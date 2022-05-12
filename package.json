@@ -4,7 +4,7 @@
   "description": "A simple name generator for 7th Sea 2nd edition",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "http-server -o"
+    "start": "http-server -o & sass --watch scss/style.scss:css/style.css"
   },
   "keywords": [
     "name_generator",
@@ -13,6 +13,7 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "http-server": "^14.1.0"
+    "http-server": "^14.1.0",
+    "sass": "^1.51.0"
   }
 }

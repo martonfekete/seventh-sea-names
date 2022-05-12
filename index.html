@@ -2,26 +2,43 @@
   <head>
     <script src="./js/constants.js"></script>
     <script src="./js//init.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <form>
-      <select id="countries" onchange="getNames(this)">
-        <option>Select country</option>
-      </select>
-    </form>
-    <section id="results">
-      <h1></h1>
-      <div></div>
-    </section>
-    <button id="btn_more" onclick="moreNames()" style="display: none">
-      More
-    </button>
-    <section id="saved" style="display: none">
-      <h1>Saved names</h1>
-      <div></div>
-      <button id="btn_clear" onclick="clearNames()">Clear names</button>
-    </section>
+    <main class="container">
+      <div class="grid">
+        <section>
+          <h1>Generate names</h1>
+          <form>
+            <select id="countries" onchange="getNames(this)">
+              <option>Select country</option>
+            </select>
+          </form>
+          <section id="results">
+            <div></div>
+          </section>
+          <button id="btn_more" onclick="moreNames()" style="display: none">
+            More
+          </button>
+        </section>
+        <section id="saved">
+          <h1>Saved names</h1>
+          <div>Save the names you like by clicking on the bookmark icon</div>
+          <button id="btn_clear" onclick="clearNames()" style="display: none">
+            Clear names
+          </button>
+        </section>
+      </div>
+    </main>
     <script src="/js/save.js"></script>
     <script src="/js/generator.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script>
+      feather.replace();
+    </script>
   </body>
 </html>

@@ -1,0 +1,8 @@
+svg {
+  width: 1rem;
+}
+svg.filled {
+  fill: var(--color);
+}
+
+/*# sourceMappingURL=style.css.map */

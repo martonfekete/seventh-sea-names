@@ -1,0 +1,6 @@
+svg {
+    width: 1rem;
+    &.filled {
+        fill: var(--color);
+    }
+}

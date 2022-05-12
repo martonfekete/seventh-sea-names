@@ -9,9 +9,9 @@
     countrySelector.add(option);
   });
 
-  if (!window.sessionStorage.getItem(STORAGE_KEY)) {
+  if (!window.localStorage.getItem(STORAGE_KEY)) {
     let names = await fetch("../names.json");
     names = await names.json();
-    window.sessionStorage.setItem(STORAGE_KEY, JSON.stringify(names));
+    window.localStorage.setItem(STORAGE_KEY, JSON.stringify(names));
   }
 })();
